@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: arial;
+        }
+        .form-container{
+            background-color: #dedede;
+            padding: 30px;
+        }
+        .input-container{
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .input-container input{
+            width: 90%;
+            padding: 5px;
+        }
+        .input-container label{
+            width: 10%;
+        }
+        .input-container input:invalid{
+            background-color: rgb(244, 185, 185);
+        }
+        .test{
+            font-size:12px;
+            border: 1px red solid;
+        }
+        .test2{
+            background-color: black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Contact</h2>
+        <form>
+            <div class="input-container">
+                <label>Name:</label>
+                <input  type="text" name="user_name" required>
+            </div>
+            <div class="input-container">
+                <label>Age</label>
+                <input class="test" type="number" name="user_age" value="0">
+            </div>
+            <div class="input-container">
+                <label class="test">Password</label>
+                <input type="password" name="user_pass" maxlength="5">
+            </div>
+            <button class="test test2" type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
